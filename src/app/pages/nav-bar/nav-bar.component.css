@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ========================================================== Mobile media queriy ============================= */
+/* ========================================================== Mobile media queriy ============================= */
+/* ========================================================== Mobile media queriy ============================= */
+@media only screen and (max-width: 1421px) {
+  #navbar-desktop-view {
+    @apply hidden;
+  }
+}
+/* ========================================================== Desktop media queriy ============================= */
+/* ========================================================== Desktop media queriy ============================= */
+/* ========================================================== Desktop media queriy ============================= */
+@media only screen and (min-width: 1420px) {
+  #navbar-mobile-view {
+    @apply hidden;
+  }
+  .navbar-container1 {
+    @apply flex justify-center items-center w-full h-40 font-['MainFont'];
+  }
+  .navbar-container2 {
+    @apply flex justify-between items-center w-full h-full;
+  }
+  /* navbar-section1 */
+  .navbar-section1 {
+    @apply flex justify-start items-end;
+  }
+  .name {
+    @apply text-3xl;
+  }
+  .dot {
+    @apply text-3xl font-extrabold text-[#00ff99];
+  }
+  /* navbar-section2 */
+  .navbar-section2 {
+    @apply flex justify-between items-center w-1/2;
+  }
+  .link {
+    @apply cursor-pointer;
+  }
+  .link:hover {
+    @apply text-[#00ff99];
+  }
+  .hireme {
+    @apply cursor-pointer rounded-full px-3 py-2 text-black bg-[#00ff99];
+  }
+  .hireme:hover {
+    @apply bg-[#00e187];
+  }
+}

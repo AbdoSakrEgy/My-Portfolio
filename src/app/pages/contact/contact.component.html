@@ -1,0 +1,96 @@
+<main class="contact-container1" id="contact">
+  <main class="contact-container2">
+    <section class="contact-section1">
+      <div class="title">Let's work together</div>
+      <div class="desc">
+        Looking for a developer to bring your ideas to life?Let's build
+        something amazing together.
+      </div>
+      <form
+        class="contact-form"
+        [formGroup]="contactForm"
+        (submit)="sendEmail($event)"
+      >
+        <div class="flex flex-col gap-1">
+          <input
+            placeholder="Your name"
+            type="text"
+            class="input-field"
+            formControlName="user_name"
+            name="user_name"
+          />
+          @if(this.contactForm.get('user_name')?.hasError('required') &&
+          this.contactForm.get('user_name')?.touched){
+          <span class="-err-message">Name is required</span>
+          }
+        </div>
+        <div class="flex flex-col gap-1">
+          <input
+            placeholder="Your email"
+            type="email"
+            class="input-field"
+            formControlName="user_email"
+            name="user_email"
+          />
+          @if(this.contactForm.get('user_email')?.hasError('required') &&
+          this.contactForm.get('user_email')?.touched){
+          <span class="-err-message">Email is required</span>
+          } @if(this.contactForm.get('user_email')?.hasError('email') &&
+          this.contactForm.get('user_email')?.touched){
+          <span class="-err-message">Enter a valid email</span>
+          }
+        </div>
+        <div class="flex flex-col gap-1">
+          <textarea
+            placeholder="Message"
+            class="input-field !h-20"
+            formControlName="message"
+            name="message"
+          ></textarea>
+          @if(this.contactForm.get('message')?.hasError('required') &&
+          this.contactForm.get('message')?.touched){
+          <span class="-err-message">Message is required</span>
+          }
+        </div>
+        <button
+          [class]="{
+            'contact-btn': true,
+          }"
+          [disabled]="this.contactForm.invalid"
+          type="submit"
+        >
+          Send message
+        </button>
+      </form>
+    </section>
+    <section class="contact-section2">
+      <div class="contactCard">
+        <section class="cardIcon">
+          <ng-icon name="bootstrapTelephoneFill" />
+        </section>
+        <section class="cardInfo">
+          <div class="title">Phone</div>
+          <div class="data">(+20) 100 713 7667</div>
+        </section>
+      </div>
+      <div class="contactCard">
+        <section class="cardIcon">
+          <ng-icon name="simpleGmail" />
+        </section>
+        <section class="cardInfo">
+          <div class="title">Email</div>
+          <div class="data">abdulrahimsakr01&#64;gmail.com</div>
+        </section>
+      </div>
+      <div class="contactCard">
+        <section class="cardIcon">
+          <ng-icon name="simpleGooglemaps" />
+        </section>
+        <section class="cardInfo">
+          <div class="title">Address</div>
+          <div class="data">Cairo, Egypt</div>
+        </section>
+      </div>
+    </section>
+  </main>
+</main>

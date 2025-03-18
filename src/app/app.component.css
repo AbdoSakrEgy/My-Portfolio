@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ========================================================== Mobile media queriy ============================= */
+/* ========================================================== Mobile media queriy ============================= */
+/* ========================================================== Mobile media queriy ============================= */
+@media only screen and (max-width: 1421px) {
+  .app-container {
+    @apply flex flex-col gap-14 px-[2vw] bg-[#1c1c22] text-white h-full overflow-hidden !overflow-y-scroll scroll-smooth;
+  }
+  .app-container::-webkit-scrollbar {
+    width: 6px;
+  }
+  .app-container::-webkit-scrollbar-thumb {
+    background: #00ff99;
+    border-radius: 10px;
+  }
+}
+/* ========================================================== Desctop media queriy ============================= */
+/* ========================================================== Desctop media queriy ============================= */
+/* ========================================================== Desctop media queriy ============================= */
+@media only screen and (min-width: 1420px) {
+  .app-container {
+    @apply px-[15vw] bg-[#1c1c22] text-white h-full overflow-hidden !overflow-y-scroll scroll-smooth;
+  }
+  .app-container::-webkit-scrollbar {
+    width: 6px;
+  }
+  .app-container::-webkit-scrollbar-thumb {
+    background: #00ff99;
+    border-radius: 10px;
+  }
+}

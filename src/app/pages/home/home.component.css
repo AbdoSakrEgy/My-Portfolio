@@ -1,0 +1,235 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ========================================================== Mobile media queriy ============================= */
+/* ========================================================== Mobile media queriy ============================= */
+/* ========================================================== Mobile media queriy ============================= */
+@media only screen and (max-width: 1420px) {
+  .home-container1 {
+    @apply flex justify-center items-center font-['MainFont'] min-h-[calc(100vh-160px)];
+  }
+  .home-container2 {
+    @apply flex flex-col justify-around gap-10 w-full h-full;
+  }
+  /* section 1 */
+  .home-section1 {
+    @apply flex flex-col-reverse items-center text-center;
+  }
+  .personal-info {
+    @apply flex flex-col items-center w-1/2 gap-12;
+  }
+  .personal-info > .jobDesc {
+    @apply flex flex-col text-4xl gap-3;
+  }
+  .jobDesc > .jobTitle {
+    @apply text-base text-gray-300;
+    animation: LTR 0.2s linear;
+  }
+  .jobDesc > .jobGreeting {
+    animation: LTR 0.4s linear;
+  }
+  .jobDesc > .name {
+    @apply text-[#00ff99];
+    animation: LTR 0.5s linear;
+  }
+  .personal-info > .about {
+    @apply flex flex-col gap-2 text-gray-400;
+    animation: LTR 0.7s linear;
+  }
+  .personal-info > .contact {
+    @apply flex flex-wrap justify-center items-center gap-5;
+  }
+  .personal-info > .contact a:nth-of-type(1) {
+    animation: LTR 1s linear;
+  }
+  .personal-info > .contact a:nth-of-type(2) {
+    animation: LTR 0.5s linear;
+  }
+  .personal-info > .contact a:nth-of-type(3) {
+    animation: LTR 0.5s linear;
+  }
+  .contact .cvBTN {
+    @apply flex justify-center items-center border rounded-full w-44 h-12 transition duration-300 ease-in-out text-[#00ff99] border-[#00ff99];
+  }
+  .contact .cvBTN:hover {
+    @apply cursor-pointer text-black bg-[#00ff99];
+  }
+  .contact .icon {
+    @apply flex justify-center items-center rounded-full w-9 h-9 transition duration-300 ease-in-out border text-[#00ff99] border-[#00ff99];
+  }
+  .contact .icon:hover {
+    @apply cursor-pointer text-black bg-[#00ff99];
+  }
+
+  .home-section1 > .personal-avatar {
+    @apply flex justify-center items-center w-1/2;
+    animation: personalImageAppear 1s linear;
+    .circle1 {
+      width: full;
+      height: full;
+      display: block;
+    }
+    .border1 {
+      stroke: #00ff99; /* ✅ Correct Color */
+      stroke-width: 2;
+      stroke-dasharray: 10 15 20 25 30 35;
+      stroke-linecap: round;
+      animation: dashLength 2s ease-in-out infinite alternate;
+    }
+  }
+
+  /* section 2 */
+  .home-section2 {
+    @apply flex flex-wrap justify-center items-center gap-5;
+    animation: BTT 1s linear;
+  }
+  .home-section2 .stats {
+    @apply flex justify-between items-center gap-3;
+  }
+  .home-section2 .statsNumber {
+    @apply text-4xl font-bold;
+  }
+  .home-section2 .statsInfo {
+    @apply flex flex-col justify-center text-xs text-gray-400;
+  }
+}
+
+/* ========================================================== Desctop media queriy ============================= */
+/* ========================================================== Desctop media queriy ============================= */
+/* ========================================================== Desctop media queriy ============================= */
+@media only screen and (min-width: 1420px) {
+  .home-container1 {
+    @apply flex justify-center items-center font-['MainFont'] min-h-[calc(100vh-160px)];
+  }
+  .home-container2 {
+    @apply flex flex-col justify-around w-full h-full;
+  }
+  /* section 1 */
+  .home-section1 {
+    @apply flex justify-between items-center;
+  }
+  .personal-info {
+    @apply flex flex-col w-1/2 gap-12;
+  }
+  .personal-info > .jobDesc {
+    @apply flex flex-col text-7xl gap-3;
+  }
+  .jobDesc > .jobTitle {
+    @apply text-base text-gray-300;
+    animation: LTR 0.2s linear;
+  }
+  .jobDesc > .jobGreeting {
+    animation: LTR 0.4s linear;
+  }
+  .jobDesc > .name {
+    @apply text-[#00ff99];
+    animation: LTR 0.5s linear;
+  }
+  .personal-info > .about {
+    @apply flex flex-col gap-2 text-gray-400;
+    animation: LTR 0.7s linear;
+  }
+  .personal-info > .contact {
+    @apply flex justify-start items-center gap-5;
+  }
+  .personal-info > .contact a:nth-of-type(1) {
+    animation: LTR 1s linear;
+  }
+  .personal-info > .contact a:nth-of-type(2) {
+    animation: LTR 0.5s linear;
+  }
+  .personal-info > .contact a:nth-of-type(3) {
+    animation: LTR 0.5s linear;
+  }
+  .contact .cvBTN {
+    @apply flex justify-center items-center border rounded-full w-44 h-12 transition duration-300 ease-in-out text-[#00ff99] border-[#00ff99];
+  }
+  .contact .cvBTN:hover {
+    @apply cursor-pointer text-black bg-[#00ff99];
+  }
+  .contact .icon {
+    @apply flex justify-center items-center rounded-full w-9 h-9 transition duration-300 ease-in-out border text-[#00ff99] border-[#00ff99];
+  }
+  .contact .icon:hover {
+    @apply cursor-pointer text-black bg-[#00ff99];
+  }
+
+  .home-section1 > .personal-avatar {
+    @apply flex justify-center items-center w-1/2;
+    animation: personalImageAppear 1s linear;
+    .circle1 {
+      width: full;
+      height: full;
+      display: block;
+    }
+    .border1 {
+      stroke: #00ff99; /* ✅ Correct Color */
+      stroke-width: 2;
+      stroke-dasharray: 10 15 20 25 30 35;
+      stroke-linecap: round;
+      animation: dashLength 2s ease-in-out infinite alternate;
+    }
+  }
+
+  /* section 2 */
+  .home-section2 {
+    @apply flex justify-between items-center;
+    animation: BTT 1s linear;
+  }
+  .home-section2 .stats {
+    @apply flex justify-between items-center gap-3;
+  }
+  .home-section2 .statsNumber {
+    @apply text-5xl font-bold;
+  }
+  .home-section2 .statsInfo {
+    @apply flex flex-col justify-center text-xs text-gray-400;
+  }
+}
+
+/* ========================================================== Animations ============================= */
+/* ========================================================== Animations ============================= */
+/* ========================================================== Animations ============================= */
+@keyframes personalImageAppear {
+  from {
+    opacity: 0;
+    scale: 0.5;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
+@keyframes LTR {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes BTT {
+  from {
+    opacity: 0;
+    transform: translateY(200%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* for avatar */
+@keyframes dashLength {
+  0% {
+    stroke-dasharray: 10 15 20 25 30 35;
+  }
+  50% {
+    stroke-dasharray: 20 10 30 15 25 40;
+  }
+  100% {
+    stroke-dasharray: 15 25 10 30 20 35;
+  }
+}

@@ -1,0 +1,266 @@
+<main class="resume-container1" id="resume">
+  <main class="resume-container2">
+    <section class="resume-section1">
+      <div class="title">Why hire me?</div>
+      <div class="desc">
+        <span>With expertise in Angular, I build userFriendly,</span>
+        <span>high-performance web applications.</span>
+      </div>
+      <div class="options">
+        <div
+          [class]="{
+            option: true,
+            '-option-active': selectedOption == 'experience'
+          }"
+          (click)="selectOption('experience')"
+        >
+          Experience
+        </div>
+        <div
+          [class]="{
+            option: true,
+            '-option-active': selectedOption == 'education'
+          }"
+          (click)="selectOption('education')"
+        >
+          Education
+        </div>
+        <div
+          [class]="{
+            option: true,
+            '-option-active': selectedOption == 'skills'
+          }"
+          (click)="selectOption('skills')"
+        >
+          Skills
+        </div>
+        <div
+          [class]="{
+            option: true,
+            '-option-active': selectedOption == 'aboutMe'
+          }"
+          (click)="selectOption('aboutMe')"
+        >
+          About me
+        </div>
+      </div>
+    </section>
+    <section class="resume-section2">
+      <!-- experience -->
+      @if(selectedOption=='experience'){
+      <div class="optionsView">
+        <div class="title">My experience</div>
+        <div class="experienceCards">
+          <!-- card 1 -->
+          <div class="experienceCard">
+            <div class="text-xs text-[#00ff99]">mar 2021 - sep 2021</div>
+            <div class="titleJob">Frontend developer</div>
+            <div class="text-xs">EBDAA Company</div>
+            <div class="flex justify-start items-end gap-3">
+              <div class="text-3xl text-[#00ff99]">.</div>
+              <div class="certificate" (click)="openDialog('ebdaa')">
+                <span class="text-gray-400 border-b border-gray-400">
+                  certificate
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- education -->
+      } @if(selectedOption=='education'){
+      <div class="optionsView">
+        <div class="title">My education</div>
+        <div class="educationCards">
+          <!-- card 1 -->
+          <div class="educationCard">
+            <div class="text-xs text-[#00ff99]">2020 - 2023</div>
+            <div class="text-2xl font-bold text-white">Bachelor's degree</div>
+            <div class="text-xs">
+              Computers and Informatics - Tanta University - Egypt
+            </div>
+            <div class="flex justify-start items-end gap-3">
+              <div class="text-3xl text-[#00ff99]">.</div>
+              <div class="certificate" (click)="openDialog('bachelor')">
+                <span class="text-gray-400 border-b border-gray-400">
+                  certificate
+                </span>
+              </div>
+            </div>
+          </div>
+          <!-- card 2 -->
+          <div class="educationCard">
+            <div class="text-xs text-[#00ff99]">2017 - 2019</div>
+            <div class="text-2xl font-bold text-white">High school diploma</div>
+            <div class="text-xs">ElShaheed Ahmed Nabil School- Egypt</div>
+            <div class="flex justify-start items-end gap-3">
+              <div class="text-3xl text-[#00ff99]">.</div>
+              <div class="certificate" (click)="openDialog('highSchool1')">
+                <span class="text-gray-400 border-b border-gray-400">
+                  certificate 1
+                </span>
+              </div>
+              <div class="text-gray-400">-</div>
+              <div class="certificate" (click)="openDialog('highSchool2')">
+                <span class="text-gray-400 border-b border-gray-400">
+                  certificate 2
+                </span>
+              </div>
+            </div>
+          </div>
+          <!-- card 3 -->
+          <div class="educationCard">
+            <div class="text-xs text-[#00ff99]">2014 - 2016</div>
+            <div class="text-2xl font-bold text-white">Mid School degree</div>
+            <div class="text-xs">Major General AlAzab Saad School - Egypt</div>
+            <div class="flex justify-start items-end gap-3">
+              <div class="text-3xl text-[#00ff99]">.</div>
+              <div class="certificate" (click)="openDialog('')">
+                <span class="text-gray-400 border-b border-gray-400">
+                  certificate
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- skills -->
+      } @if(selectedOption=='skills'){
+      <div class="optionsView">
+        <div class="title">My skills</div>
+        <div class="skillCards">
+          <div
+            class="skillCard"
+            matTooltip="Angular"
+            matTooltipPosition="above"
+            matTooltipClass="custom-tooltip"
+          >
+            <ng-icon name="ionLogoAngular" />
+          </div>
+          <div
+            class="skillCard"
+            matTooltip="NgRx"
+            matTooltipPosition="above"
+            matTooltipClass="custom-tooltip"
+          >
+            <ng-icon name="simpleNgrx" />
+          </div>
+          <div
+            class="skillCard"
+            matTooltip="TailwindCSS"
+            matTooltipPosition="above"
+            matTooltipClass="custom-tooltip"
+          >
+            <ng-icon name="simpleTailwindcss" />
+          </div>
+
+          <div
+            class="skillCard"
+            matTooltip="React"
+            matTooltipPosition="above"
+            matTooltipClass="custom-tooltip"
+          >
+            <ng-icon name="ionLogoReact" />
+          </div>
+          <div
+            class="skillCard"
+            matTooltip="Nextjs"
+            matTooltipPosition="above"
+            matTooltipClass="custom-tooltip"
+          >
+            <ng-icon name="simpleNextdotjs" />
+          </div>
+          <div
+            class="skillCard"
+            matTooltip="Redux"
+            matTooltipPosition="above"
+            matTooltipClass="custom-tooltip"
+          >
+            <ng-icon name="simpleRedux" />
+          </div>
+          <div
+            class="skillCard"
+            matTooltip="React router"
+            matTooltipPosition="above"
+            matTooltipClass="custom-tooltip"
+          >
+            <ng-icon name="simpleReactrouter" />
+          </div>
+          <div
+            class="skillCard"
+            matTooltip="React hook form"
+            matTooltipPosition="above"
+            matTooltipClass="custom-tooltip"
+          >
+            <ng-icon name="simpleReacthookform" />
+          </div>
+          <div
+            class="skillCard"
+            matTooltip="DaisyUI"
+            matTooltipPosition="above"
+            matTooltipClass="custom-tooltip"
+          >
+            <ng-icon name="simpleDaisyui" />
+          </div>
+
+          <div
+            class="skillCard"
+            matTooltip="Git"
+            matTooltipPosition="above"
+            matTooltipClass="custom-tooltip"
+          >
+            <ng-icon name="bootstrapGit" />
+          </div>
+        </div>
+      </div>
+      <!-- aboutMe -->
+      } @if(selectedOption=='aboutMe'){
+      <div class="optionsView">
+        <div class="title">About me</div>
+        <div class="aboutMeDesc">
+          Frontend web developer with over 1 year in industry. Skilled in a
+          variety of web technologies, including Angular, Reactjs, Tailwindcss,
+          Redux ToolKit and more. Hold a Bachelor's degree in Computer Science
+          from Tanta University. Trying to do my best.
+        </div>
+        <div class="aboutMeContact">
+          <div class="aboutMeContactCol1">
+            <div class="aboutMeCard">
+              <div class="aboutMeTitle1">Name</div>
+              <div class="aboutMeTitle2">Abdulrahim Sakr</div>
+            </div>
+            <div class="aboutMeCard">
+              <div class="aboutMeTitle1">Experience</div>
+              <div class="aboutMeTitle2">+1 Year</div>
+            </div>
+            <div class="aboutMeCard">
+              <div class="aboutMeTitle1">Freelance</div>
+              <div class="aboutMeTitle2">Avilable</div>
+            </div>
+            <div class="aboutMeCard">
+              <div class="aboutMeTitle1">Nationality</div>
+              <div class="aboutMeTitle2">Egyption</div>
+            </div>
+          </div>
+          <div class="aboutMeContactCol2">
+            <div class="aboutMeCard">
+              <div class="aboutMeTitle1">Phone</div>
+              <div class="aboutMeTitle2">(+20) 1007137667</div>
+            </div>
+            <div class="aboutMeCard">
+              <div class="aboutMeTitle1">Email</div>
+              <div class="aboutMeTitle2 !text-sm">
+                abdulrahimsakr01&#64;gmail.com
+              </div>
+            </div>
+            <div class="aboutMeCard">
+              <div class="aboutMeTitle1">Languages</div>
+              <div class="aboutMeTitle2">Arabic, English</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      }
+    </section>
+  </main>
+</main>

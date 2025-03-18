@@ -1,0 +1,149 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ========================================================== Mobile media queriy ============================= */
+/* ========================================================== Mobile media queriy ============================= */
+/* ========================================================== Mobile media queriy ============================= */
+@media only screen and (max-width: 1420px) {
+  .contact-container1 {
+    @apply flex justify-center items-center font-['MainFont'] min-h-[100vh];
+  }
+  .contact-container2 {
+    @apply flex flex-col-reverse justify-center items-center gap-20;
+  }
+  /* contact-section1 */
+  .contact-section1 {
+    @apply flex flex-col gap-8 min-w-[50%] p-10 rounded-lg bg-[#2a2a33] text-gray-400;
+    animation: LTR 1s linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+  }
+  .contact-section1 .title {
+    @apply text-2xl text-[#00ff99];
+  }
+  .contact-section1 .desc {
+    @apply flex flex-col text-xs/7;
+  }
+  .contact-form {
+    @apply flex flex-col justify-center gap-5;
+  }
+  .input-field {
+    @apply rounded-md h-12 p-3 outline-none bg-[#1c1c22] text-white;
+  }
+  .input-field::placeholder {
+    @apply flex justify-start items-center text-xs;
+  }
+  .-err-message {
+    @apply text-xs text-red-500;
+  }
+  .contact-btn {
+    @apply flex justify-center items-center rounded-full w-fit px-5 py-3 text-[#1c1c22] bg-[#00ff99];
+  }
+  /* contact-section2 */
+  .contact-section2 {
+    @apply flex flex-col gap-8 min-w-[50%];
+    animation: RTL 1s linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+  }
+  .contactCard {
+    @apply flex justify-start items-center gap-3;
+  }
+  .cardIcon {
+    @apply flex justify-center items-center text-xl w-14 h-14 rounded-md text-[#00ff99] bg-[#2a2a33];
+  }
+  .cardInfo {
+    @apply flex flex-col gap-3;
+  }
+  .contact-section2 > .contactCard > .cardInfo > .title {
+    @apply text-xs text-gray-400;
+  }
+  .contact-section2 > .contactCard > .cardInfo > .data {
+    @apply text-base text-white;
+  }
+}
+/* ========================================================== Desktop media queriy ============================= */
+/* ========================================================== Desktop media queriy ============================= */
+/* ========================================================== Desktop media queriy ============================= */
+@media only screen and (min-width: 1420px) {
+  .contact-container1 {
+    @apply flex justify-center items-center font-['MainFont'] min-h-[100vh];
+  }
+  .contact-container2 {
+    @apply flex justify-center items-center gap-20;
+  }
+  /* contact-section1 */
+  .contact-section1 {
+    @apply flex flex-col gap-8 w-1/2 p-10 rounded-lg bg-[#2a2a33] text-gray-400;
+    animation: LTR 1s linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+  }
+  .contact-section1 .title {
+    @apply text-4xl text-[#00ff99];
+  }
+  .contact-section1 .desc {
+    @apply flex flex-col text-sm/7;
+  }
+  .contact-form {
+    @apply flex flex-col justify-center gap-5;
+  }
+  .input-field {
+    @apply rounded-md h-12 p-3 outline-none bg-[#1c1c22] text-white;
+  }
+  .input-field::placeholder {
+    @apply flex justify-start items-center text-xs;
+  }
+  .-err-message {
+    @apply text-xs text-red-500;
+  }
+  .contact-btn {
+    @apply flex justify-center items-center rounded-full w-fit px-5 py-3 text-[#1c1c22] bg-[#00ff99];
+  }
+  /* contact-section2 */
+  .contact-section2 {
+    @apply flex flex-col gap-8 w-1/2;
+    animation: RTL 1s linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+  }
+  .contactCard {
+    @apply flex justify-start items-center gap-3;
+  }
+  .cardIcon {
+    @apply flex justify-center items-center text-xl w-14 h-14 rounded-md text-[#00ff99] bg-[#2a2a33];
+  }
+  .cardInfo {
+    @apply flex flex-col gap-3;
+  }
+  .contact-section2 > .contactCard > .cardInfo > .title {
+    @apply text-xs text-gray-400;
+  }
+  .contact-section2 > .contactCard > .cardInfo > .data {
+    @apply text-base text-white;
+  }
+}
+/* ========================================================== Animations ============================= */
+/* ========================================================== Animations ============================= */
+/* ========================================================== Animations ============================= */
+@keyframes RTL {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes LTR {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

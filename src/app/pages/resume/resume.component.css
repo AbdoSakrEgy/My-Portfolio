@@ -1,0 +1,254 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ========================================================== Mobile media queriy ============================= */
+/* ========================================================== Mobile media queriy ============================= */
+/* ========================================================== Mobile media queriy ============================= */
+@media only screen and (max-width: 1421px) {
+  .resume-container1 {
+    @apply flex justify-center items-center font-['MainFont'] min-h-[100vh];
+  }
+  .resume-container2 {
+    @apply flex flex-wrap justify-center items-center gap-20 w-full h-fit;
+  }
+  /* resume-section1 */
+  .resume-section1 {
+    @apply flex flex-col justify-between gap-14 min-w-[50%];
+    animation: LTR 1s linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+  }
+  .title {
+    @apply text-3xl font-bold w-full;
+  }
+  .desc {
+    @apply flex flex-col justify-between gap-3 text-xs text-gray-400;
+  }
+  .options {
+    @apply flex flex-col justify-between gap-4 text-xs;
+  }
+  .option {
+    @apply text-center cursor-pointer rounded-md py-3 text-white bg-[#2a2a33];
+  }
+  .-option-active {
+    @apply text-[#1c1c22] bg-[#00ff99];
+  }
+  /* resume-section2 */
+  .resume-section2 {
+    @apply flex flex-col justify-start min-w-[50%];
+    animation: RTL 1s linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+  }
+  .optionsView {
+    @apply flex flex-col gap-14;
+  }
+  .optionsView .title {
+    @apply text-2xl text-center;
+  }
+  .option-desc {
+    @apply text-xs;
+  }
+  /* experience */
+  .experienceCards {
+    @apply flex flex-col;
+  }
+  .experienceCard {
+    @apply flex flex-col gap-3 w-full p-5 bg-[#2a2a33] rounded-lg cursor-default;
+  }
+  .experienceCard .titleJob {
+    @apply text-xl font-bold text-white;
+  }
+  /* education */
+  .educationCards {
+    @apply flex flex-col gap-5 h-[500px] overflow-hidden !overflow-y-scroll;
+  }
+  .educationCard {
+    @apply flex flex-col gap-3 w-full p-5 bg-[#2a2a33] rounded-lg cursor-default;
+  }
+  .educationCards::-webkit-scrollbar {
+    width: 6px;
+  }
+  .educationCards::-webkit-scrollbar-thumb {
+    background: #00ff99;
+    border-radius: 10px;
+  }
+  .educationCard .certificate {
+    @apply flex justify-start items-center gap-3 cursor-pointer text-sm;
+  }
+  /* skills */
+  .skillCards {
+    @apply flex flex-wrap justify-start items-center gap-5 h-[500px] overflow-hidden !overflow-y-scroll;
+  }
+  .skillCard {
+    @apply flex justify-center items-center text-5xl rounded-lg w-32 h-32 text-white bg-[#2a2a33];
+  }
+  .skillCard:hover {
+    @apply cursor-pointer text-[#00ff99];
+  }
+  .skillCards::-webkit-scrollbar {
+    width: 6px;
+  }
+  .skillCards::-webkit-scrollbar-thumb {
+    background: #00ff99;
+    border-radius: 10px;
+  }
+  /* aboutMe */
+  .aboutMeDesc {
+    @apply text-sm text-gray-400;
+  }
+  .aboutMeContact {
+    @apply flex flex-wrap justify-start items-start gap-3;
+  }
+  .aboutMeContactCol1 {
+    @apply flex flex-col justify-start gap-8 min-w-[48%];
+  }
+  .aboutMeContactCol2 {
+    @apply flex flex-col justify-start gap-8 min-w-[48%];
+  }
+  .aboutMeCard {
+    @apply flex justify-start items-center gap-3;
+  }
+  .aboutMeTitle1 {
+    @apply text-base text-gray-400;
+  }
+  .aboutMeTitle2 {
+    @apply text-lg font-semibold text-white;
+  }
+}
+/* ========================================================== Desktop media queriy ============================= */
+/* ========================================================== Desktop media queriy ============================= */
+/* ========================================================== Desktop media queriy ============================= */
+@media only screen and (min-width: 1420px) {
+  .resume-container1 {
+    @apply flex justify-center items-center font-['MainFont'] min-h-[100vh];
+  }
+  .resume-container2 {
+    @apply flex justify-between items-start gap-20 w-full h-fit;
+  }
+  /* resume-section1 */
+  .resume-section1 {
+    @apply flex flex-col justify-between gap-14 w-1/2;
+    animation: LTR 1s linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+  }
+  .title {
+    @apply text-5xl font-bold w-full;
+  }
+  .desc {
+    @apply flex flex-col justify-between gap-3 text-sm text-gray-400;
+  }
+  .options {
+    @apply flex flex-col justify-between gap-4 text-sm;
+  }
+  .option {
+    @apply text-center cursor-pointer rounded-md py-3 text-white bg-[#2a2a33];
+  }
+  .-option-active {
+    @apply text-[#1c1c22] bg-[#00ff99];
+  }
+  /* resume-section2 */
+  .resume-section2 {
+    @apply flex flex-col justify-start w-1/2;
+    animation: RTL 1s linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+  }
+  .optionsView {
+    @apply flex flex-col gap-14;
+  }
+  .optionsView .title {
+    @apply text-5xl;
+  }
+  .option-desc {
+    @apply text-sm;
+  }
+  /* experience */
+  .experienceCards {
+    @apply flex flex-col;
+  }
+  .experienceCard {
+    @apply flex flex-col gap-3 w-full p-5 bg-[#2a2a33] rounded-lg cursor-default;
+  }
+  /* education */
+  .educationCards {
+    @apply flex flex-col gap-5 h-[500px] overflow-hidden !overflow-y-scroll;
+  }
+  .educationCard {
+    @apply flex flex-col gap-3 w-full p-5 bg-[#2a2a33] rounded-lg cursor-default;
+  }
+  .educationCards::-webkit-scrollbar {
+    width: 6px;
+  }
+  .educationCards::-webkit-scrollbar-thumb {
+    background: #00ff99;
+    border-radius: 10px;
+  }
+  .educationCard .certificate {
+    @apply flex justify-start items-center gap-3 cursor-pointer text-sm;
+  }
+  /* skills */
+  .skillCards {
+    @apply flex flex-wrap justify-start items-center gap-5 h-[500px] overflow-hidden !overflow-y-scroll;
+  }
+  .skillCard {
+    @apply flex justify-center items-center text-5xl rounded-lg w-32 h-32 text-white bg-[#2a2a33];
+  }
+  .skillCard:hover {
+    @apply cursor-pointer text-[#00ff99];
+  }
+  .skillCards::-webkit-scrollbar {
+    width: 6px;
+  }
+  .skillCards::-webkit-scrollbar-thumb {
+    background: #00ff99;
+    border-radius: 10px;
+  }
+  /* aboutMe */
+  .aboutMeDesc {
+    @apply text-sm text-gray-400;
+  }
+  .aboutMeContact {
+    @apply flex justify-start items-start gap-3;
+  }
+  .aboutMeContactCol1 {
+    @apply flex flex-col justify-start gap-8 w-1/2;
+  }
+  .aboutMeContactCol2 {
+    @apply flex flex-col justify-start gap-8 w-1/2;
+  }
+  .aboutMeCard {
+    @apply flex justify-start items-center gap-3;
+  }
+  .aboutMeTitle1 {
+    @apply text-base text-gray-400;
+  }
+  .aboutMeTitle2 {
+    @apply text-lg font-semibold text-white;
+  }
+}
+/* ========================================================== Animations ============================= */
+/* ========================================================== Animations ============================= */
+/* ========================================================== Animations ============================= */
+@keyframes RTL {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes LTR {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

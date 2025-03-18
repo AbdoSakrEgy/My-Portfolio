@@ -1,0 +1,163 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ========================================================== Mobile media queriy ============================= */
+/* ========================================================== Mobile media queriy ============================= */
+/* ========================================================== Mobile media queriy ============================= */
+@media only screen and (max-width: 1421px) {
+  .projects-container1 {
+    @apply flex justify-center items-center font-['MainFont'] min-h-[100vh];
+  }
+  .projects-container2 {
+    @apply flex flex-wrap justify-center items-center gap-20 w-full;
+  }
+  /* projects-section1 */
+  .projects-section1 {
+    @apply flex flex-col justify-between items-center gap-10 w-full;
+    animation: LTR 1s linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+  }
+  .projects-section1 .proj-number {
+    @apply text-6xl;
+  }
+  .projects-section1 .proj-name {
+    @apply text-xl font-bold;
+  }
+  .projects-section1 .proj-desc {
+    @apply text-xs text-gray-400;
+  }
+  .projects-section1 .proj-skills {
+    @apply flex flex-wrap justify-center items-center text-xs text-[#00ff99];
+  }
+  .projects-section1 .proj-links {
+    @apply flex justify-start items-center gap-5;
+  }
+  .projects-section1 .link {
+    @apply w-16 h-16 rounded-full text-lg flex justify-center items-center transition duration-300 ease-in-out text-white bg-[#2a2a33];
+  }
+  .projects-section1 .link:hover {
+    @apply cursor-pointer text-[#1c1c22] bg-[#00ff99];
+  }
+
+  /* projects-section2 */
+  .projects-section2 {
+    @apply flex flex-col justify-center items-center gap-5 overflow-hidden w-full;
+    animation: RTL 1s linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+  }
+  .projects-section2 .img-container {
+    @apply flex justify-center items-center;
+  }
+  .projects-section2 .project-img {
+    @apply h-[400px] object-cover brightness-90 rounded-lg;
+  }
+  .projects-section2 .btns {
+    @apply flex justify-end items-center gap-3;
+  }
+  .projects-section2 .previous,
+  .projects-section2 .next {
+    @apply flex justify-center items-center w-10 h-10 text-xl text-[#1c1c22] bg-[#00ff99];
+  }
+  .projects-section2 .notActive {
+    @apply flex justify-center items-center w-10 h-10 text-xl text-[#1c1c22] bg-gray-400;
+  }
+  .projects-section2 .previous:hover,
+  .projects-section2 .next:hover {
+    @apply cursor-pointer text-[#1c1c22] bg-[#00e187];
+  }
+}
+/* ========================================================== Desktop media queriy ============================= */
+/* ========================================================== Desktop media queriy ============================= */
+/* ========================================================== Desktop media queriy ============================= */
+@media only screen and (min-width: 1420px) {
+  .projects-container1 {
+    @apply flex justify-center items-center font-['MainFont'] min-h-[100vh];
+  }
+  .projects-container2 {
+    @apply flex justify-center items-start gap-20 w-full;
+  }
+  /* projects-section1 */
+  .projects-section1 {
+    @apply flex flex-col justify-between gap-10 w-1/2;
+    animation: LTR 1s linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+
+    .proj-number {
+      @apply text-9xl;
+    }
+    .proj-name {
+      @apply text-4xl font-bold;
+    }
+    .proj-desc {
+      @apply text-xs text-gray-400;
+    }
+    .proj-skills {
+      @apply flex justify-start items-center text-sm text-[#00ff99];
+    }
+    .proj-links {
+      @apply flex justify-start items-center gap-5;
+    }
+    .link {
+      @apply w-16 h-16 rounded-full text-2xl flex justify-center items-center transition duration-300 ease-in-out text-white bg-[#2a2a33];
+    }
+    .link:hover {
+      @apply cursor-pointer text-[#1c1c22] bg-[#00ff99];
+    }
+  }
+  /* projects-section2 */
+  .projects-section2 {
+    @apply flex flex-col gap-5 overflow-hidden w-1/2;
+    animation: RTL 1s linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+
+    .img-container {
+      @apply flex justify-end;
+    }
+    .project-img {
+      @apply h-[400px] object-cover brightness-90 rounded-lg;
+    }
+    .btns {
+      @apply flex justify-end items-center gap-3;
+    }
+    .previous,
+    .next {
+      @apply flex justify-center items-center w-10 h-10 text-xl text-[#1c1c22] bg-[#00ff99];
+    }
+    .notActive {
+      @apply flex justify-center items-center w-10 h-10 text-xl text-[#1c1c22] bg-gray-400;
+    }
+    .previous:hover,
+    .next:hover {
+      @apply cursor-pointer text-[#1c1c22] bg-[#00e187];
+    }
+  }
+}
+/* ========================================================== Animations media queriy ============================= */
+/* ========================================================== Animations media queriy ============================= */
+/* ========================================================== Animations media queriy ============================= */
+@keyframes RTL {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes LTR {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

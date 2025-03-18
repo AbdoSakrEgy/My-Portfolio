@@ -1,0 +1,38 @@
+<main class="mobileNavbar-container1">
+  <main class="mobileNavbar-container2">
+    <section class="mobileNavbar-section1">
+      <span class="name">Abdulrahim</span>
+      <span class="dot">.</span>
+    </section>
+    <section class="mobileNavbar-section2">
+      <button class="menu" (click)="openCloseOverlayMenu()">
+        <ng-icon name="ionMenu" />
+      </button>
+    </section>
+  </main>
+</main>
+
+@if(isOverlayMenu){
+<!-- overlay-menu -->
+<main class="menu-container1">
+  <main class="menu-container2">
+    <button (click)="openCloseOverlayMenu()" class="menu-section1">
+      <ng-icon name="ionClose" />
+    </button>
+    <div class="menu-section2">
+      <span class="name">Abdulrahim</span>
+      <span class="dot">.</span>
+    </div>
+    <div class="menu-section3">
+      <a href="#home" class="link">Home</a>
+      <a href="#projects" class="link">Projects</a>
+      <a href="#resume" class="link">Resume</a>
+      <a href="#contact" class="link">Contact</a>
+    </div>
+  </main>
+</main>
+<!-- blure -->
+<main class="blure-container1" (click)="openCloseOverlayMenu()">
+  <main class="blure-container2"></main>
+</main>
+}@else { }

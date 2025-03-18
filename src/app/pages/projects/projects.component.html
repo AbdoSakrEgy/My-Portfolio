@@ -1,0 +1,64 @@
+<main class="projects-container1" id="projects">
+  <main class="projects-container2">
+    <section class="projects-section1">
+      <div class="proj-number">
+        @if(selectedProject+1<10){ 0{{ selectedProject + 1 }}
+        }@else {
+        {{ selectedProject + 1 }}
+        }
+      </div>
+      <div class="proj-name">{{ projects[selectedProject].name }}</div>
+      <div class="proj-desc">{{ projects[selectedProject].description }}</div>
+      <div class="proj-skills">
+        @for(tool of projects[selectedProject].tools;track tool; let i =
+        $index){
+        <span>{{ tool }}</span>
+        @if(i != projects[selectedProject].tools.length-1){
+        <span>,&nbsp;</span>
+        }}
+      </div>
+      <hr style="border: 2px solid #353545" />
+      <div class="proj-links">
+        <a [href]="projects[selectedProject].projectLink" target="_blank">
+          <div class="link">
+            <ng-icon name="bootstrapArrowUpRight" />
+          </div>
+        </a>
+        <a [href]="projects[selectedProject].projectGithub" target="_blank">
+          <div class="link">
+            <ng-icon name="bootstrapGithub" />
+          </div>
+        </a>
+      </div>
+    </section>
+    <section class="projects-section2">
+      <div class="img-container">
+        <img
+          [src]="projects[selectedProject].projectImage"
+          alt="Project image"
+          class="project-img"
+        />
+      </div>
+      <div class="btns">
+        <div
+          [class]="{
+            previous: selectedProject != 0,
+            notActive: selectedProject == 0
+          }"
+          (click)="previous()"
+        >
+          <ng-icon name="bootstrapArrowLeft" />
+        </div>
+        <div
+          [class]="{
+            previous: selectedProject != projects.length - 1,
+            notActive: selectedProject == projects.length - 1
+          }"
+          (click)="next()"
+        >
+          <ng-icon name="bootstrapArrowRight" />
+        </div>
+      </div>
+    </section>
+  </main>
+</main>

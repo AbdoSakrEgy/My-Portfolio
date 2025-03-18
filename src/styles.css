@@ -1,0 +1,26 @@
+/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+  font-family: "MainFont";
+  src: url("./assets/Fonts/FiraMono-Regular.ttf") format("truetype");
+}
+
+/*
+main color codes
+black : #1c1c22
+black2 :#2a2a33
+gray : 
+green : #00ff99
+green2 : #00e187
+*/
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
