@@ -54,7 +54,7 @@ You can deploy it using **GitHub Pages**, **Firebase Hosting**, **Vercel**, or *
 
 Feel free to reach out via:
 
-- **Email**: [your-email@example.com](https://github.com/AbdoSakrEgy)
+- **Email**: [abdulrahimsakr01@gmail.com](https://github.com/AbdoSakrEgy)
 - **LinkedIn**: [Your Profile](https://www.linkedin.com/in/abdulrahim-sakr-336937258/)
 
 ---
