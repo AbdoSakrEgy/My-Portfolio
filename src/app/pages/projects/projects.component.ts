@@ -74,7 +74,7 @@ export class ProjectsComponent {
       tools: ['Angular', 'AngularMaterial', 'Tailwindcss'],
       projectImage: '../../../assets/Projects image/user-info.png',
       projectGithub: 'https://github.com/AbdoSakrEgy/InfoViewer-2',
-      projectLink: 'https://infoviewer-2.netlify.app/InfoViewer-2',
+      projectLink: 'https://infoviewer-2.netlify.app',
     },
     {
       name: 'ECommerce-user',
@@ -123,6 +123,14 @@ export class ProjectsComponent {
       projectImage: '../../../assets/Projects image/TodoList-App.png',
       projectGithub: 'https://github.com/AbdoSakrEgy/TodoList',
       projectLink: 'https://abdosakregy.github.io/TodoList/',
+    },
+    {
+      name: 'BusinessManagement-admin',
+      description: 'Dashboard for business management.',
+      tools: ['Angular', 'AngularMaterial', 'Tailwindcss', 'ngx-charts'],
+      projectImage: '../../../assets/Projects image/Angular.jpg',
+      projectGithub: 'https://github.com/AbdoSakrEgy/BusinessManagement-admin',
+      projectLink: 'https://businessmanagement-admin.netlify.app/',
     },
   ];
 
