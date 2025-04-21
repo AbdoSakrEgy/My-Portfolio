@@ -128,7 +128,8 @@ export class ProjectsComponent {
       name: 'BusinessManagement-admin',
       description: 'Dashboard for business management.',
       tools: ['Angular', 'AngularMaterial', 'Tailwindcss', 'ngx-charts'],
-      projectImage: '../../../assets/Projects image/Angular.jpg',
+      projectImage:
+        '../../../assets/Projects image/BusinessManagement-admin.png',
       projectGithub: 'https://github.com/AbdoSakrEgy/BusinessManagement-admin',
       projectLink: 'https://businessmanagement-admin.netlify.app/',
     },
