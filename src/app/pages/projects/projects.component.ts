@@ -82,7 +82,7 @@ export class ProjectsComponent {
         'A React + Redux application for browsing products, adding them to cart, and checking out. It includes user registration and login.',
       tools: ['React', 'ReactRouterDdom', 'ReduxToolkit', 'Tailwindcss'],
       projectImage:
-        '../../../assets/Projects image/ecommerce-app-clientside.png',
+        '../../../assets/ProjectsImage/ecommerce-app-clientside.png',
       projectGithub: 'https://github.com/AbdoSakrEgy/ECommerce-user',
       projectLink: 'https://abdosakregy.github.io/ECommerce-user/',
     },
@@ -92,7 +92,7 @@ export class ProjectsComponent {
         'Website like Vezeeta, which helps doctors market themselves and help the user find the nearest doctor and make a quick appointment.',
       tools: ['React', 'Tailwindcss', 'REST APIs'],
       projectImage:
-        '../../../assets/Projects image/Aspecialize-clinic-systemngular.png',
+        '../../../assets/ProjectsImage/Aspecialize-clinic-systemngular.png',
       projectGithub: 'https://github.com/AbdoSakrEgy/specialize-clinic-system',
       projectLink: 'https://specialized-clinic-system.netlify.app/',
     },
@@ -110,7 +110,7 @@ export class ProjectsComponent {
       description: 'Portfolio design.',
       tools: ['React', 'ReactRouterDdom', 'Tailwindcss'],
       projectImage:
-        '../../../assets/Projects image/abdulrahimSakr-personal-website.png',
+        '../../../assets/ProjectsImage/abdulrahimSakr-personal-website.png',
       projectGithub:
         'https://github.com/AbdoSakrEgy/abdulrahimSakr-personal-website',
       projectLink:
@@ -129,7 +129,7 @@ export class ProjectsComponent {
       description: 'Dashboard for business management.',
       tools: ['Angular', 'AngularMaterial', 'Tailwindcss', 'ngx-charts'],
       projectImage:
-        '../../../assets/Projects image/BusinessManagement-admin.png',
+        '../../../assets/ProjectsImage/BusinessManagement-admin.png',
       projectGithub: 'https://github.com/AbdoSakrEgy/BusinessManagement-admin',
       projectLink: 'https://businessmanagement-admin.netlify.app/',
     },

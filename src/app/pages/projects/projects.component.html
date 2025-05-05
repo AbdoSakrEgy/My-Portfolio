@@ -40,7 +40,7 @@
         />
       </div>
       <div class="btns">
-        <div
+        <button
           [class]="{
             previous: selectedProject != 0,
             notActive: selectedProject == 0
@@ -48,8 +48,8 @@
           (click)="previous()"
         >
           <ng-icon name="bootstrapArrowLeft" />
-        </div>
-        <div
+        </button>
+        <button
           [class]="{
             previous: selectedProject != projects.length - 1,
             notActive: selectedProject == projects.length - 1
@@ -57,7 +57,7 @@
           (click)="next()"
         >
           <ng-icon name="bootstrapArrowRight" />
-        </div>
+        </button>
       </div>
     </section>
   </main>
