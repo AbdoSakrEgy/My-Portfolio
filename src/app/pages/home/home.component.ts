@@ -6,6 +6,7 @@ import {
   bootstrapGithub,
   bootstrapLinkedin,
 } from '@ng-icons/bootstrap-icons';
+import { phosphorEyes } from '@ng-icons/phosphor-icons/regular';
 
 @Component({
   selector: 'app-home',
@@ -14,7 +15,12 @@ import {
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',
   viewProviders: [
-    provideIcons({ bootstrapDownload, bootstrapGithub, bootstrapLinkedin }),
+    provideIcons({
+      bootstrapDownload,
+      bootstrapGithub,
+      bootstrapLinkedin,
+      phosphorEyes,
+    }),
   ],
 })
 export class HomeComponent {}

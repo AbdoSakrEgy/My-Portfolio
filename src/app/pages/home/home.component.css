@@ -50,10 +50,10 @@
     animation: LTR 0.5s linear;
   }
   .contact .cvBTN {
-    @apply flex justify-center items-center border rounded-full w-44 h-12 transition duration-300 ease-in-out text-[#00ff99] border-[#00ff99];
+    @apply flex justify-center items-center border rounded-full w-44 h-12 transition duration-300 ease-in-out bg-[#00ff99] text-black border-[#00ff99];
   }
   .contact .cvBTN:hover {
-    @apply cursor-pointer text-black bg-[#00ff99];
+    @apply cursor-pointer bg-[#00ff99]/80 border-[#00ff99]/80;
   }
   .contact .icon {
     @apply flex justify-center items-center rounded-full w-9 h-9 transition duration-300 ease-in-out border text-[#00ff99] border-[#00ff99];
@@ -143,10 +143,10 @@
     animation: LTR 0.5s linear;
   }
   .contact .cvBTN {
-    @apply flex justify-center items-center border rounded-full w-44 h-12 transition duration-300 ease-in-out text-[#00ff99] border-[#00ff99];
+    @apply flex justify-center items-center border rounded-full w-44 h-12 transition duration-300 ease-in-out bg-[#00ff99] text-black border-[#00ff99];
   }
   .contact .cvBTN:hover {
-    @apply cursor-pointer text-black bg-[#00ff99];
+    @apply cursor-pointer bg-[#00ff99]/80 border-[#00ff99]/80;
   }
   .contact .icon {
     @apply flex justify-center items-center rounded-full w-9 h-9 transition duration-300 ease-in-out border text-[#00ff99] border-[#00ff99];

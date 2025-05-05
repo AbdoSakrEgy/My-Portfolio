@@ -10,6 +10,9 @@ import {
   simpleDaisyui,
   simpleNextdotjs,
   simpleNgrx,
+  simpleBootstrap,
+  simpleI18next,
+  simplePostman,
 } from '@ng-icons/simple-icons';
 import {
   MAT_DIALOG_DATA,
@@ -36,6 +39,9 @@ import { MatTooltipModule } from '@angular/material/tooltip';
       simpleDaisyui,
       simpleNextdotjs,
       simpleNgrx,
+      simpleBootstrap,
+      simpleI18next,
+      simplePostman,
     }),
   ],
   encapsulation: ViewEncapsulation.None, // Disable view encapsulation

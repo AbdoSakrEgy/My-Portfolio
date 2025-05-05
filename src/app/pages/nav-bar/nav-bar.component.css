@@ -43,10 +43,4 @@
   .link:hover {
     @apply text-[#00ff99];
   }
-  .hireme {
-    @apply cursor-pointer rounded-full px-3 py-2 text-black bg-[#00ff99];
-  }
-  .hireme:hover {
-    @apply bg-[#00e187];
-  }
 }
