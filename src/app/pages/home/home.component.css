@@ -233,3 +233,57 @@
     stroke-dasharray: 15 25 10 30 20 35;
   }
 }
+
+/* ========================================================== Eye Animations ============================= */
+/* ========================================================== Eye Animations ============================= */
+/* ========================================================== Eye Animations ============================= */
+.face-container {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 8px;
+  height: 28px; /* Set explicit height to control spacing */
+  margin-top: -2px; /* Push the entire face container up slightly */
+}
+
+.eyes-container {
+  display: flex;
+  justify-content: center;
+  gap: 1px; /* Set the space between eyes to 1px */
+}
+
+.eye-container {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.eye {
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #ccc;
+}
+
+.pupil {
+  width: 10px;
+  height: 10px;
+  background-color: black;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.simple-smile {
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: -1px;
+  font-family: monospace;
+  margin-top: 1px; /* Reduce space between eyes and smile */
+}
