@@ -133,6 +133,15 @@ export class ProjectsComponent {
       projectGithub: 'https://github.com/AbdoSakrEgy/BusinessManagement-admin',
       projectLink: 'https://businessmanagement-admin.netlify.app/',
     },
+    {
+      name: 'hunters-ijdc',
+      description: 'private app for ijdc company.',
+      tools: ['ReactJS', 'NextJS', 'Tailwindcss', 'React suite'],
+      projectImage:
+        '../../../assets/ProjectsImage/hunters-ijdc.png',
+      projectGithub: 'https://github.com/AbdoSakrEgy/hunters-ijdc',
+      projectLink: 'https://hunters-ijdc.vercel.app/',
+    },
   ];
 
   previous() {
