@@ -36,7 +36,7 @@
   }
   /* resume-section2 */
   .resume-section2 {
-    @apply flex flex-col justify-start min-w-[50%];
+    @apply flex flex-col justify-start min-w-full;
     animation: RTL 1s linear;
     animation-timeline: view();
     animation-range: entry 0% cover 30%;
@@ -50,31 +50,26 @@
   .option-desc {
     @apply text-xs;
   }
-  /* experience */
+  /* education - experience */
+  .educationCards,
   .experienceCards {
-    @apply flex flex-col;
+    @apply flex flex-col gap-5 h-[500px] overflow-hidden !overflow-y-scroll;
   }
+  .educationCard,
   .experienceCard {
     @apply flex flex-col gap-3 w-full p-5 bg-[#2a2a33] rounded-lg cursor-default;
   }
-  .experienceCard .titleJob {
-    @apply text-xl font-bold text-white;
-  }
-  /* education */
-  .educationCards {
-    @apply flex flex-col gap-5 h-[500px] overflow-hidden !overflow-y-scroll;
-  }
-  .educationCard {
-    @apply flex flex-col gap-3 w-full p-5 bg-[#2a2a33] rounded-lg cursor-default;
-  }
-  .educationCards::-webkit-scrollbar {
+  .educationCards::-webkit-scrollbar,
+  .experienceCards::-webkit-scrollbar {
     width: 6px;
   }
-  .educationCards::-webkit-scrollbar-thumb {
+  .educationCards::-webkit-scrollbar-thumb,
+  .experienceCards::-webkit-scrollbar-thumb {
     background: #00ff99;
     border-radius: 10px;
   }
-  .educationCard .certificate {
+  .educationCard .certificate,
+  .experienceCard .certificate {
     @apply flex justify-start items-center gap-3 cursor-pointer text-sm;
   }
   /* skills */
@@ -165,24 +160,21 @@
   .option-desc {
     @apply text-sm;
   }
-  /* experience */
+  /* education - experience */
+  .educationCards,
   .experienceCards {
-    @apply flex flex-col;
+    @apply flex flex-col gap-5 h-[500px] overflow-hidden !overflow-y-scroll;
   }
+  .educationCard,
   .experienceCard {
     @apply flex flex-col gap-3 w-full p-5 bg-[#2a2a33] rounded-lg cursor-default;
   }
-  /* education */
-  .educationCards {
-    @apply flex flex-col gap-5 h-[500px] overflow-hidden !overflow-y-scroll;
-  }
-  .educationCard {
-    @apply flex flex-col gap-3 w-full p-5 bg-[#2a2a33] rounded-lg cursor-default;
-  }
-  .educationCards::-webkit-scrollbar {
+  .educationCards::-webkit-scrollbar,
+  .experienceCards::-webkit-scrollbar {
     width: 6px;
   }
-  .educationCards::-webkit-scrollbar-thumb {
+  .educationCards::-webkit-scrollbar-thumb,
+  .experienceCards::-webkit-scrollbar-thumb {
     background: #00ff99;
     border-radius: 10px;
   }

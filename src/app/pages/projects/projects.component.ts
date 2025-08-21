@@ -137,10 +137,26 @@ export class ProjectsComponent {
       name: 'hunters-ijdc',
       description: 'private app for ijdc company.',
       tools: ['ReactJS', 'NextJS', 'Tailwindcss', 'React suite'],
-      projectImage:
-        '../../../assets/ProjectsImage/hunters-ijdc.png',
+      projectImage: '../../../assets/ProjectsImage/hunters-ijdc.png',
       projectGithub: 'https://github.com/AbdoSakrEgy/hunters-ijdc',
       projectLink: 'https://hunters-ijdc.vercel.app/',
+    },
+    {
+      name: 'Saraha',
+      description:
+        'Backend implementation for a "Sarahah" style anonymous messaging application',
+      tools: [
+        'NoedJS',
+        'Express',
+        'RESTful APIs',
+        'MongoDB',
+        'NoSQL',
+        'mongodb Driver',
+        'Mongoose ODM',
+      ],
+      projectImage: '../../../assets/ProjectsImage/NodeJS.png',
+      projectGithub: 'https://github.com/AbdoSakrEgy/Saraha',
+      projectLink: 'https://github.com/AbdoSakrEgy/Saraha',
     },
   ];
 

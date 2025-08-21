@@ -1,6 +1,7 @@
 import { Component, inject, ViewEncapsulation } from '@angular/core';
 import { NgIcon, provideIcons } from '@ng-icons/core';
 import { ionLogoAngular, ionLogoReact } from '@ng-icons/ionicons';
+import { hugeAdobeXd } from '@ng-icons/huge-icons';
 import { bootstrapGit } from '@ng-icons/bootstrap-icons';
 import {
   simpleTailwindcss,
@@ -13,6 +14,19 @@ import {
   simpleBootstrap,
   simpleI18next,
   simplePostman,
+  simpleNodedotjs,
+  simpleExpress,
+  simpleNestjs,
+  simpleGraphql,
+  simpleMysql,
+  simpleMongodb,
+  simpleMongoose,
+  simpleSequelize,
+  simpleGithub,
+  simpleClevercloud,
+  simplePhpmyadmin,
+  simpleFigma,
+  simpleCloudinary,
 } from '@ng-icons/simple-icons';
 import {
   MAT_DIALOG_DATA,
@@ -32,6 +46,7 @@ import { MatTooltipModule } from '@angular/material/tooltip';
       ionLogoAngular,
       ionLogoReact,
       bootstrapGit,
+      hugeAdobeXd,
       simpleTailwindcss,
       simpleRedux,
       simpleReactrouter,
@@ -42,6 +57,19 @@ import { MatTooltipModule } from '@angular/material/tooltip';
       simpleBootstrap,
       simpleI18next,
       simplePostman,
+      simpleNodedotjs,
+      simpleExpress,
+      simpleNestjs,
+      simpleGraphql,
+      simpleMysql,
+      simpleMongodb,
+      simpleMongoose,
+      simpleSequelize,
+      simpleGithub,
+      simpleClevercloud,
+      simplePhpmyadmin,
+      simpleFigma,
+      simpleCloudinary,
     }),
   ],
   encapsulation: ViewEncapsulation.None, // Disable view encapsulation
@@ -97,21 +125,23 @@ export class DialogOverviewExampleDialog {
     switch (this.data.certificateName) {
       case 'ebdaa':
         this.imgForView =
-          '../../../assets/Abdulrahim cv/Certificates/MegaDev certificate.jpeg';
+          '../../../assets/Abdulrahim CV/Certificates/MegaDev certificate.jpeg';
         break;
       case 'bachelor':
         this.imgForView =
-          '../../../assets/Abdulrahim cv/Certificates/FCI certificate.jpeg';
+          '../../../assets/Abdulrahim CV/Certificates/FCI certificate.jpeg';
         break;
       case 'highSchool1':
         this.imgForView =
-          '../../../assets/Abdulrahim cv/Certificates/High school certificate 1.jpeg';
+          '../../../assets/Abdulrahim CV/Certificates/High school certificate 1.jpeg';
         break;
       case 'highSchool2':
         this.imgForView =
-          '../../../assets/Abdulrahim cv/Certificates/High school certificate 2.jpeg';
+          '../../../assets/Abdulrahim CV/Certificates/High school certificate 2.jpeg';
         break;
       default:
+        this.imgForView =
+          '../../../assets/Abdulrahim CV/Certificates/FCI certificate.jpeg';
         break;
     }
   }
