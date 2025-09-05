@@ -28,6 +28,15 @@
         <div
           [class]="{
             option: true,
+            '-option-active': selectedOption == 'certification'
+          }"
+          (click)="selectOption('certification')"
+        >
+          Certifications
+        </div>
+        <div
+          [class]="{
+            option: true,
             '-option-active': selectedOption == 'skills'
           }"
           (click)="selectOption('skills')"
@@ -54,48 +63,49 @@
           <!-- card 1 -->
           <div class="experienceCard">
             <div class="text-xs text-[#00ff99]">jul 2025 - Present</div>
-            <div class="titleJob">MEARN developer</div>
-            <div class="text-xs">ITI Trainee</div>
-            <div class="flex justify-start items-end gap-3">
+            <div class="titleJob">MEARN Developer Trainee</div>
+            <div class="text-xs">ITI</div>
+            <!-- <div class="flex justify-start items-end gap-3">
               <div class="text-3xl text-[#00ff99]">.</div>
-              <div class="certificate" (click)="openDialog('ebdaa')">
-                <span class="text-gray-400 border-b border-gray-400">
-                  certificate
-                </span>
-              </div>
-            </div>
+              <a
+                href=""
+              >
+              <span class="text-gray-400 border-b border-gray-400">
+                certificate
+              </span>
+              </a>
+            </div> -->
           </div>
           <!-- card 2 -->
           <div class="experienceCard">
             <div class="text-xs text-[#00ff99]">apr 2025 - Present</div>
-            <div class="titleJob">NodeJS developer</div>
-            <div class="text-xs">Route Trainee</div>
-            <div class="flex justify-start items-end gap-3">
+            <div class="titleJob">NodeJS Developer Trainee</div>
+            <div class="text-xs">Route</div>
+            <!-- <div class="flex justify-start items-end gap-3">
               <div class="text-3xl text-[#00ff99]">.</div>
-              <div class="certificate" (click)="openDialog('ebdaa')">
-                <span class="text-gray-400 border-b border-gray-400">
-                  certificate
-                </span>
-              </div>
-            </div>
+              <a
+                href=""
+              >
+              <span class="text-gray-400 border-b border-gray-400">
+                certificate
+              </span>
+              </a>
+            </div> -->
           </div>
           <!-- card 3 -->
           <div class="experienceCard">
-            <div class="text-xs text-[#00ff99]">mar 2023 - apr 2025</div>
-            <div class="titleJob">Personal Projects</div>
-          </div>
-          <!-- card 4 -->
-          <div class="experienceCard">
             <div class="text-xs text-[#00ff99]">mar 2021 - sep 2021</div>
-            <div class="titleJob">Frontend developer</div>
+            <div class="titleJob">Frontend Developer Trainee</div>
             <div class="text-xs">EBDAA Company</div>
             <div class="flex justify-start items-end gap-3">
               <div class="text-3xl text-[#00ff99]">.</div>
-              <div class="certificate" (click)="openDialog('ebdaa')">
+              <a
+                href="https://drive.google.com/file/d/1P58YHFc3vq8D0Yyd5qAZo27yieHNY043/view?usp=drive_link"
+              >
                 <span class="text-gray-400 border-b border-gray-400">
                   certificate
                 </span>
-              </div>
+              </a>
             </div>
           </div>
         </div>
@@ -114,11 +124,13 @@
             </div>
             <div class="flex justify-start items-end gap-3">
               <div class="text-3xl text-[#00ff99]">.</div>
-              <div class="certificate" (click)="openDialog('bachelor')">
+              <a
+                href="https://drive.google.com/file/d/1fCp-zR4yhHN8mEExUTHmAaQO5AjtZZqr/view?usp=drive_link"
+              >
                 <span class="text-gray-400 border-b border-gray-400">
                   certificate
                 </span>
-              </div>
+              </a>
             </div>
           </div>
           <!-- card 2 -->
@@ -128,17 +140,21 @@
             <div class="text-xs">ElShaheed Ahmed Nabil School- Egypt</div>
             <div class="flex justify-start items-end gap-3">
               <div class="text-3xl text-[#00ff99]">.</div>
-              <div class="certificate" (click)="openDialog('highSchool1')">
+              <a
+                href="https://drive.google.com/file/d/1dFxtH-zjZ4HBshs6sgvFS819AhQsW8aL/view?usp=drive_link"
+              >
                 <span class="text-gray-400 border-b border-gray-400">
                   certificate 1
                 </span>
-              </div>
+              </a>
               <div class="text-gray-400">-</div>
-              <div class="certificate" (click)="openDialog('highSchool2')">
+              <a
+                href="https://drive.google.com/file/d/18reSV3MomtVeHYHSHJ61MuYyP_bgJH_3/view?usp=drive_link"
+              >
                 <span class="text-gray-400 border-b border-gray-400">
                   certificate 2
                 </span>
-              </div>
+              </a>
             </div>
           </div>
           <!-- card 3 -->
@@ -148,11 +164,136 @@
             <div class="text-xs">Major General AlAzab Saad School - Egypt</div>
             <div class="flex justify-start items-end gap-3">
               <div class="text-3xl text-[#00ff99]">.</div>
-              <div class="certificate" (click)="openDialog('')">
+              <a href="">
                 <span class="text-gray-400 border-b border-gray-400">
                   certificate
                 </span>
-              </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- certification -->
+      } @if(selectedOption=='certification'){
+      <div class="optionsView">
+        <div class="title">My certifications</div>
+        <div class="certificationCards">
+          <!-- card 1 -->
+          <div class="certificationCard">
+            <div class="text-xs text-[#00ff99]">2025</div>
+            <div class="text-2xl font-bold text-white">
+              Getting started as a freelancer (khamsat)
+            </div>
+            <div class="text-xs">MaharaTech</div>
+            <div class="flex justify-start items-end gap-3">
+              <div class="text-3xl text-[#00ff99]">.</div>
+              <a
+                href="https://drive.google.com/file/d/1KqhA83cNSnUR_RGIFo9QEjHS2XSr-KgY/view"
+              >
+                <span class="text-gray-400 border-b border-gray-400">
+                  certificate
+                </span>
+              </a>
+            </div>
+          </div>
+          <!-- card 2 -->
+          <div class="certificationCard">
+            <div class="text-xs text-[#00ff99]">2025</div>
+            <div class="text-2xl font-bold text-white">
+              Getting started as a freelancer (Upwork)
+            </div>
+            <div class="text-xs">MaharaTech</div>
+            <div class="flex justify-start items-end gap-3">
+              <div class="text-3xl text-[#00ff99]">.</div>
+              <a
+                href="https://drive.google.com/open?id=1CvO-ChVYbPIU-mxAjTFaCaW3gS01o31R&usp=drive_fs"
+              >
+                <span class="text-gray-400 border-b border-gray-400">
+                  certificate
+                </span>
+              </a>
+            </div>
+          </div>
+          <!-- card 3 -->
+          <div class="certificationCard">
+            <div class="text-xs text-[#00ff99]">2025</div>
+            <div class="text-2xl font-bold text-white">
+              Getting started as a freelancer (Mostaql)
+            </div>
+            <div class="text-xs">MaharaTech</div>
+            <div class="flex justify-start items-end gap-3">
+              <div class="text-3xl text-[#00ff99]">.</div>
+              <a
+                href="https://drive.google.com/open?id=1kELM6xanKhnt8v_bE0BKzdhgRj6N6n0l&usp=drive_fs"
+              >
+                <span class="text-gray-400 border-b border-gray-400">
+                  certificate
+                </span>
+              </a>
+            </div>
+          </div>
+          <!-- card 4 -->
+          <div class="certificationCard">
+            <div class="text-xs text-[#00ff99]">2025</div>
+            <div class="text-2xl font-bold text-white">Freelancing Basics</div>
+            <div class="text-xs">MaharaTech</div>
+            <div class="flex justify-start items-end gap-3">
+              <div class="text-3xl text-[#00ff99]">.</div>
+              <a
+                href="https://drive.google.com/file/d/1CxFLdSm6BWeojwROyR0CHvxuWj6u7EJy/view?usp=sharing"
+              >
+                <span class="text-gray-400 border-b border-gray-400">
+                  certificate
+                </span>
+              </a>
+            </div>
+          </div>
+          <!-- card 5 -->
+          <div class="certificationCard">
+            <div class="text-xs text-[#00ff99]">2025</div>
+            <div class="text-2xl font-bold text-white">Angular</div>
+            <div class="text-xs">Sololearn</div>
+            <div class="flex justify-start items-end gap-3">
+              <div class="text-3xl text-[#00ff99]">.</div>
+              <a
+                href="https://drive.google.com/open?id=1r_mnQyN99IJh948nxZEZ82Ueuba9sUJI&usp=drive_fs"
+              >
+                <span class="text-gray-400 border-b border-gray-400">
+                  certificate
+                </span>
+              </a>
+            </div>
+          </div>
+          <!-- card 6 -->
+          <div class="certificationCard">
+            <div class="text-xs text-[#00ff99]">2021</div>
+            <div class="text-2xl font-bold text-white">ReactJS</div>
+            <div class="text-xs">MaharaTech</div>
+            <div class="flex justify-start items-end gap-3">
+              <div class="text-3xl text-[#00ff99]">.</div>
+              <a
+                href="https://drive.google.com/open?id=19mtmVYVRJ7JYPnUe9dEPEg1gD9-smnGR&usp=drive_fs"
+              >
+                <span class="text-gray-400 border-b border-gray-400">
+                  certificate
+                </span>
+              </a>
+            </div>
+          </div>
+          <!-- card 7 -->
+          <div class="certificationCard">
+            <div class="text-xs text-[#00ff99]">2021</div>
+            <div class="text-2xl font-bold text-white">Frontend ReactJS</div>
+            <div class="text-xs">EBDAA company</div>
+            <div class="flex justify-start items-end gap-3">
+              <div class="text-3xl text-[#00ff99]">.</div>
+              <a
+                href="hthttps://drive.google.com/open?id=1P58YHFc3vq8D0Yyd5qAZo27yieHNY043&usp=drive_fs"
+              >
+                <span class="text-gray-400 border-b border-gray-400">
+                  certificate
+                </span>
+              </a>
             </div>
           </div>
         </div>
@@ -378,7 +519,6 @@
           >
             <ng-icon name="simpleCloudinary" />
           </div>
-
         </div>
       </div>
       <!-- aboutMe -->

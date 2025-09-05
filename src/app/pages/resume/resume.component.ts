@@ -86,6 +86,9 @@ export class ResumeComponent {
       case 'education':
         this.selectedOption = 'education';
         break;
+      case 'certification':
+        this.selectedOption = 'certification';
+        break;
       case 'skills':
         this.selectedOption = 'skills';
         break;

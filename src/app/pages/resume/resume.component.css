@@ -50,25 +50,30 @@
   .option-desc {
     @apply text-xs;
   }
-  /* education - experience */
+  /*  experience - education - certification*/
   .educationCards,
+  .certificationCards,
   .experienceCards {
     @apply flex flex-col gap-5 h-[500px] overflow-hidden !overflow-y-scroll;
   }
   .educationCard,
+  .certificationCard,
   .experienceCard {
     @apply flex flex-col gap-3 w-full p-5 bg-[#2a2a33] rounded-lg cursor-default;
   }
   .educationCards::-webkit-scrollbar,
+  .certificationCards::-webkit-scrollbar,
   .experienceCards::-webkit-scrollbar {
     width: 6px;
   }
   .educationCards::-webkit-scrollbar-thumb,
+  .certificationCards::-webkit-scrollbar-thumb,
   .experienceCards::-webkit-scrollbar-thumb {
     background: #00ff99;
     border-radius: 10px;
   }
   .educationCard .certificate,
+  .certificationCard .certificate,
   .experienceCard .certificate {
     @apply flex justify-start items-center gap-3 cursor-pointer text-sm;
   }
@@ -162,23 +167,29 @@
   }
   /* education - experience */
   .educationCards,
+  .certificationCards,
   .experienceCards {
     @apply flex flex-col gap-5 h-[500px] overflow-hidden !overflow-y-scroll;
   }
   .educationCard,
+  .certificationCard,
   .experienceCard {
     @apply flex flex-col gap-3 w-full p-5 bg-[#2a2a33] rounded-lg cursor-default;
   }
   .educationCards::-webkit-scrollbar,
+  .certificationCards::-webkit-scrollbar,
   .experienceCards::-webkit-scrollbar {
     width: 6px;
   }
   .educationCards::-webkit-scrollbar-thumb,
+  .certificationCards::-webkit-scrollbar-thumb,
   .experienceCards::-webkit-scrollbar-thumb {
     background: #00ff99;
     border-radius: 10px;
   }
-  .educationCard .certificate {
+  .educationCard .certificate,
+  .certificationCard .certificate,
+  .experienceCard .certificate {
     @apply flex justify-start items-center gap-3 cursor-pointer text-sm;
   }
   /* skills */
