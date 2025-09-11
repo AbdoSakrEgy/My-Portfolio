@@ -123,7 +123,7 @@ export class ProjectsComponent {
       projectLink: 'https://taskmanager-admin.netlify.app/',
     },
     {
-      name: 'Saraha',
+      name: 'SarahaApp',
       description:
         'Backend implementation for a "Sarahah" style anonymous messaging application',
       tools: [
