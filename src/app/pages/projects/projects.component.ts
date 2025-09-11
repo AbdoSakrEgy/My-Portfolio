@@ -43,7 +43,7 @@ export class ProjectsComponent {
       projectImage:
         '../../../assets/ProjectsImage/BusinessManagement-admin.png',
       projectGithub: 'https://github.com/AbdoSakrEgy/BusinessManagement-admin',
-      projectLink: 'https://businessmanagement-admin.netlify.app/',
+      projectLink: 'https://business-management-admin.vercel.app/dashboard',
     },
     {
       name: 'InfoViewer',
@@ -95,7 +95,7 @@ export class ProjectsComponent {
       tools: ['Angular', 'Tailwindcss'],
       projectImage: '../../../assets/ProjectsImage/Market-user.png',
       projectGithub: 'https://github.com/AbdoSakrEgy/Market-user',
-      projectLink: 'https://market-user.netlify.app/',
+      projectLink: 'https://market-user-alpha.vercel.app/products',
     },
     {
       name: 'Market-admin',
@@ -104,7 +104,7 @@ export class ProjectsComponent {
       tools: ['Angular', 'AngularMaterial', 'Tailwindcss'],
       projectImage: '../../../assets/ProjectsImage/Market-admin.png',
       projectGithub: 'https://github.com/AbdoSakrEgy/Market-admin',
-      projectLink: 'https://market-admin-abdosakr.netlify.app/',
+      projectLink: 'https://market-admin-seven.vercel.app/products',
     },
     {
       name: 'TaskManager-user',
@@ -112,7 +112,7 @@ export class ProjectsComponent {
       tools: ['Angular', 'AngularMaterial', 'Tailwindcss', 'NgRx'],
       projectImage: '../../../assets/ProjectsImage/TaskManager-user.png',
       projectGithub: 'https://github.com/AbdoSakrEgy/TaskManager-user',
-      projectLink: 'https://taskmanager-user.netlify.app/',
+      projectLink: 'https://task-manager-user.vercel.app/login',
     },
     {
       name: 'TaskManager-admin',
