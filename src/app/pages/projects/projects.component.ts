@@ -139,6 +139,23 @@ export class ProjectsComponent {
       projectGithub: 'https://github.com/AbdoSakrEgy/Saraha',
       projectLink: 'https://github.com/AbdoSakrEgy/Saraha',
     },
+    {
+      name: 'SocialApp',
+      description:
+        'Scalable social media backend with Node.js, TypeScript, and MongoDB.',
+      tools: [
+        'NoedJS',
+        'Express',
+        'TypeScript',
+        'MongoDB',
+        'Socket.IO',
+        'AWS',
+        'Nodemailer',
+      ],
+      projectImage: '../../../assets/ProjectsImage/NodeJS2.png',
+      projectGithub: 'https://github.com/AbdoSakrEgy/SocialApp',
+      projectLink: 'https://github.com/AbdoSakrEgy/SocialApp',
+    },
   ];
 
   previous() {
