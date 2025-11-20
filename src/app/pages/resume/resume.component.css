@@ -114,7 +114,7 @@
     @apply text-base text-gray-400;
   }
   .aboutMeTitle2 {
-    @apply text-lg font-semibold text-white;
+    @apply text-lg font-semibold whitespace-nowrap text-white;
   }
 }
 /* ========================================================== Desktop media queriy ============================= */
@@ -229,7 +229,7 @@
     @apply text-base text-gray-400;
   }
   .aboutMeTitle2 {
-    @apply text-lg font-semibold text-white;
+    @apply text-lg font-semibold whitespace-nowrap text-white;
   }
 }
 /* ========================================================== Animations ============================= */

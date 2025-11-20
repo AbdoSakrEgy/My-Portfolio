@@ -29,7 +29,7 @@
     @apply text-xs text-gray-400;
   }
   .projects-section1 .proj-skills {
-    @apply flex flex-wrap justify-center items-center text-xs text-[#00ff99];
+    @apply flex flex-wrap justify-center items-center text-xs whitespace-nowrap text-[#00ff99];
   }
   .projects-section1 .proj-links {
     @apply flex justify-start items-center gap-5;
@@ -96,7 +96,7 @@
       @apply text-xs text-gray-400;
     }
     .proj-skills {
-      @apply flex justify-start items-center text-sm text-[#00ff99];
+      @apply flex justify-start items-center text-sm whitespace-nowrap text-[#00ff99];
     }
     .proj-links {
       @apply flex justify-start items-center gap-5;
