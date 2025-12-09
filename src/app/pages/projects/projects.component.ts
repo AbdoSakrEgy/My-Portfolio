@@ -26,9 +26,17 @@ export class ProjectsComponent {
   selectedProject = 0;
   projects = [
     {
+      name: 'ImaginoApp',
+      description: 'Track product prices and get updates automatically.',
+      tools: ['GenAI', 'NodeJS', 'Express', 'TS', 'MongoDB', 'Stripe'],
+      projectImage: '../../../assets/ProjectsImage/ImaginoApp.png',
+      projectGithub: 'https://github.com/AbdoSakrEgy/ImaginoApp',
+      projectLink: 'https://imagino-zeta.vercel.app/en',
+    },
+    {
       name: 'PriceTrackerApp',
       description: 'Track product prices and get updates automatically.',
-      tools: ['NodeJS', 'Express', 'RESTful APIs', 'MongoDB'],
+      tools: ['GenAI', 'NodeJS', 'Express', 'TS', 'MongoDB'],
       projectImage: '../../../assets/ProjectsImage/NodeJS2.png',
       projectGithub: 'https://github.com/AbdoSakrEgy/PriceTrackerApp',
       projectLink: 'https://github.com/AbdoSakrEgy/PriceTrackerApp',
